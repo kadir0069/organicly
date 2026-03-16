@@ -24,20 +24,19 @@ const Testimonial = () => {
     ];
 
     return (
-        <section className="bg-white py-12 md:py-20 px-4 md:px-6">
+        <section id="review-section" className="bg-white py-12 md:py-20 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 
-                {/* Section Title - Responsive sizing */}
+                {/* Section Title */}
                 <h2 className="text-[32px] md:text-5xl font-semibold text-[#011910] text-center mb-[40px] leading-tight">
                     গ্রাহকদের মতামত
                 </h2>
 
-                {/* Testimonial Cards - Added justify-items-center for mobile alignment */}
+                {/* Testimonial Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
                     {reviews.map((review, index) => (
                         <div 
                             key={index} 
-                            // h-[244px] এর বদলে min-h-[244px] এবং w-[364px] এর বদলে w-full max-w-[364px]
                             className="bg-[#E2ECE5] p-6 md:p-8 rounded-[32px] flex flex-col min-h-[244px] w-full max-w-[364px] shadow-sm hover:shadow-md transition-all duration-300"
                         >
                             {/* Stars */}

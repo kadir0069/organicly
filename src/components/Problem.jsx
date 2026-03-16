@@ -9,10 +9,10 @@ const Problem = () => {
     ];
 
     return (
-        <section className="bg-white mt-[40px] md:mt-[80px] py-12 md:py-16 px-4 md:px-6">
+        <section id="problem-section" className="bg-white mt-[40px] md:mt-[80px] py-12 md:py-16 px-4 md:px-6">
             <div className="max-w-4xl mx-auto text-center">
                 
-                {/* Section Title - Responsive Font Size */}
+                {/* Section Title */}
                 <h2 className="text-[28px] sm:text-[34px] md:text-5xl font-bold text-gray-900 mb-8 md:mb-10 leading-[130%] md:leading-[150%]">
                     আপনার লিকুইড শ্যাম্পু কি <br className="hidden sm:block" /> 
                     চুলের ক্ষতি করছে?

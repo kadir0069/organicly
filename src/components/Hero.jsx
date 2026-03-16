@@ -14,7 +14,7 @@ const HeroSection = () => {
         <section className="bg-[#067950] min-h-[700px] flex items-center px-6 py-12 md:py-24 overflow-hidden">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
 
-                {/* Left Content - Text Section (Fixed Line Spacing) */}
+                {/* Left Content */}
                 <div className="text-white order-2 md:order-1 text-center md:text-left flex flex-col justify-center">
                     <h1 className="text[50px] md:text-5xl font-samibold leading-[1.1] md:leading-[1.2] mb-6">
                         রাসায়নিকমুক্ত চুলে ফিরে <br />
@@ -26,16 +26,22 @@ const HeroSection = () => {
                         চুল পড়া বন্ধ হবে এবং চুল হবে আরও ঘন ও সিল্কি!
                     </p>
 
-                    <div>
-                        <button className="bg-[#FFB84D] text-black px-5 py-2 rounded-full text[16px] hover:bg-[#ffa726] transition-all w-[181px] h-[47px] transform hover:scale-105 shadow-xl">
-                            এখনই অর্ডার করুন
-                        </button>
-                    </div>
+                    <button
+                        onClick={() => {
+                            const element = document.getElementById('checkout-section');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                        className="bg-[#FFB84D] text-black px-5 py-2 rounded-full text-[16px] hover:bg-[#ffa726] transition-all w-[181px] h-[47px] transform hover:scale-105 shadow-xl font-bold"
+                    >
+                        এখনই অর্ডার করুন
+                    </button>
                 </div>
 
                 {/* Right Content */}
                 <div className="order-1 md:order-2 flex justify-center md:justify-end items-center relative w-full p-4 overflow-visible">
-                    
+
                     {/* Slider Container */}
                     <div className="w-[300px] h-[240px] sm:w-[400px] sm:h-[320px] lg:w-[500px] lg:h-[380px]">
                         <Swiper

@@ -29,10 +29,10 @@ const Features = () => {
     ];
 
     return (
-        <section className="bg-[#E2ECE5] py-12 md:py-16 px-4 md:px-6">
+        <section id="benefits-section" className="bg-[#E2ECE5] py-12 md:py-16 px-4 md:px-6">
             <div className="max-w-7xl mx-auto text-center">
                 
-                {/* Section Title - Responsive Font Size */}
+                {/* Section Title */}
                 <h2 className="text-[32px] md:text-5xl font-semibold text-gray-900 mb-10 md:mb-12 leading-tight">
                     কেন Organicly শ্যাম্পু <br className="hidden sm:block" /> বার সেরা?
                 </h2>
